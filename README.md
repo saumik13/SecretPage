@@ -1,6 +1,6 @@
 # SecretPage
 > Learning Authentication using PassportJS
-* For this Authentication tutorial (in first person :}), you need a basic knowledge of NodeJS and Express. 
+* For this Authentication tutorial, you need a basic knowledge of NodeJS and Express. 
 * The packages that you need for authorization are: 
   * express
   * mongoose 
@@ -102,6 +102,6 @@ function isLoggedIn(req,res,next){
     res.redirect("/login");
 }
 ```
-The function isLoggedIn is a middleware for the `app.get("/secret")` route which checks if the user is logged in. If the user is logged in, `next()`
+The function `isLoggedIn` is a middleware for the `app.get("/secret")` route which checks if the user is logged in. If the user is logged in, `next()`
 is executed which means that the route, `"/secret"` will be executed.
 If the user is not logged in, he/she will be redirected to the login page. 
