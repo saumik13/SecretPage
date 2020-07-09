@@ -46,7 +46,7 @@ As it can be seen above, when a new User is created to be registered, its only a
 Like the `"/register"` routes, the __get__ route for `/login` renders a form that allows the user to input its credentials. 
 The __post__ route is where the authentication takes place with the help of __passport's__ `authenticate()` function. If the credentials entered match with any of those in the database, the user is sent to the `/secret` page. Otherwise, the `/login` page is reloaded. 
 
-```
+```javascript
 app.post("/login", passport.authenticate("local",{
     successRedirect:"/secret",
     failureRedirect:"/login"
