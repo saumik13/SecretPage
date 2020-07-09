@@ -32,7 +32,7 @@ passport.deserializeUser(User.deserializeUser());
 UserSchema.plugin(passportLocalMongoose);
 ````
 ---
-##Authentication
+## Authentication
 ```javascript
 app.post("/register", function (req,res) {
     User.register( new User({ username: req.body.username}, req.body.password, function(err,user){
