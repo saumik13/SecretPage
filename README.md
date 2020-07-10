@@ -1,7 +1,7 @@
 # SecretPage
 > Learning Authentication using PassportJS
 * For this Authentication tutorial, you need a basic knowledge of NodeJS and Express. 
-* The packages that you need for authorization are: 
+* The packages that you need for authentication are: 
   * express
   * mongoose 
   * body-parser
